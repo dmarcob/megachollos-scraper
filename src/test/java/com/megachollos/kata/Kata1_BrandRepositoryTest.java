@@ -1,12 +1,20 @@
 package com.megachollos.kata;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.megachollos.brand.infrastructure.jpa.entities.BrandEntity;
 import com.megachollos.brand.infrastructure.jpa.repositories.JpaBrandRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
  * This test is BROKEN on purpose.
@@ -14,10 +22,19 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
  * Follow the instructions in kata-1-why-integration-tests.md
  */
 @DataJpaTest
+@Testcontainers
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class Kata1_BrandRepositoryTest {
+
+  @Container
+  @ServiceConnection
+  static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Autowired
   private JpaBrandRepository jpaBrandRepository;
+
+  @Autowired
+  private JdbcTemplate jdbcTemplate;
 
   @Test
   void shouldSaveAndFindBrand() {
@@ -34,5 +51,22 @@ class Kata1_BrandRepositoryTest {
     var result = jpaBrandRepository.findById("samsung");
     assertThat(result).isPresent();
     assertThat(result.get().getDisplayName()).isEqualTo("Samsung");
+  }
+
+  @Test
+  void shouldFailWhenDuplicateUniqueName() {
+    // GIVEN a brand already stored in the database
+    BrandEntity brand = BrandEntity.builder()
+        .uniqueName("samsung")
+        .displayName("Samsung")
+        .build();
+    jpaBrandRepository.saveAndFlush(brand);
+
+    // WHEN another row uses the same primary key THEN PostgreSQL rejects it
+    assertThatThrownBy(() -> jdbcTemplate.update(
+        "INSERT INTO brands (unique_name, display_name) VALUES (?, ?)",
+        "samsung",
+        "Samsung duplicate"))
+        .isInstanceOf(DataIntegrityViolationException.class);
   }
 }

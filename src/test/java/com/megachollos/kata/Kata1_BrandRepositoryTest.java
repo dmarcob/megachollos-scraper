@@ -1,12 +1,18 @@
 package com.megachollos.kata;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.megachollos.brand.infrastructure.jpa.entities.BrandEntity;
 import com.megachollos.brand.infrastructure.jpa.repositories.JpaBrandRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
+import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
  * This test is BROKEN on purpose.
@@ -14,7 +20,14 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
  * Follow the instructions in kata-1-why-integration-tests.md
  */
 @DataJpaTest
+@Testcontainers
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class Kata1_BrandRepositoryTest {
+
+  @Container
+  @ServiceConnection
+  static PostgreSQLContainer<?> postgres =
+      new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Autowired
   private JpaBrandRepository jpaBrandRepository;
@@ -34,5 +47,27 @@ class Kata1_BrandRepositoryTest {
     var result = jpaBrandRepository.findById("samsung");
     assertThat(result).isPresent();
     assertThat(result.get().getDisplayName()).isEqualTo("Samsung");
+  }
+
+  @Test
+  void shouldFailWhenDuplicateUniqueName() {
+
+    // GIVEN two brands with the same name
+    BrandEntity brand = BrandEntity.builder()
+        .uniqueName("samsung")
+        .displayName("Samsung")
+        .build();
+    
+    BrandEntity brand2 = BrandEntity.builder()
+        .uniqueName("samsung")
+        .displayName("Samsung")
+        .build();
+
+    // WHEN we save them
+    jpaBrandRepository.save(brand);
+
+    // THEN throws error
+    assertThatThrownBy(() -> jpaBrandRepository.saveAndFlush(brand2))
+      .isInstanceOf(Exception.class);
   }
 }

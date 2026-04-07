@@ -6,7 +6,12 @@ import com.megachollos.brand.infrastructure.jpa.entities.BrandEntity;
 import com.megachollos.brand.infrastructure.jpa.repositories.JpaBrandRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
+import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
  * This test is BROKEN on purpose.
@@ -14,7 +19,14 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
  * Follow the instructions in kata-1-why-integration-tests.md
  */
 @DataJpaTest
+@Testcontainers
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class Kata1_BrandRepositoryTest {
+
+  @Container
+  @ServiceConnection
+  static PostgreSQLContainer<?> postgres =
+          new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Autowired
   private JpaBrandRepository jpaBrandRepository;

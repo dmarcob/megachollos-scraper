@@ -3,6 +3,7 @@ package com.megachollos.kata;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -19,8 +20,9 @@ class Kata2_ContainerDebugTest {
   // TODO fix me: this image tag does not exist
   // =============================================
   @Container
+  @ServiceConnection
   static PostgreSQLContainer<?> postgresA =
-      new PostgreSQLContainer<>("postgres:999");
+      new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Test
   void exerciseA_wrongImage() {
@@ -32,11 +34,12 @@ class Kata2_ContainerDebugTest {
   // TODO fix me: the container credentials don't match what the test expects
   // =============================================
   @Container
+  @ServiceConnection
   static PostgreSQLContainer<?> postgresB =
       new PostgreSQLContainer<>("postgres:17-alpine")
-          .withUsername("wrong_user")
-          .withPassword("wrong_pass")
-          .withDatabaseName("wrong_db");
+          .withUsername("megachollos")
+          .withPassword("megachollos")
+          .withDatabaseName("megachollos");
 
   @Test
   void exerciseB_wrongCredentials() {

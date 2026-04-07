@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.36</version>
+      <version>${lombok.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- PostgreSQL -->
@@ -142,13 +142,13 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>5.14.2</version>
+      <version>5.17.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-junit-jupiter</artifactId>
-      <version>5.14.2</version>
+      <version>5.17.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -163,6 +163,8 @@
   <properties>
     <!-- Java properties -->
     <java.version>17</java.version>
+    <!-- Override Lombok from Spring Boot parent — 1.18.36+ required for Java 25 -->
+    <lombok.version>1.18.38</lombok.version>
     <!-- Maven plugins properties -->
     <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -198,6 +200,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <build>
+    <!-- Build outside OneDrive to avoid file-locking issues during sync -->
+    <directory>${user.home}/.m2/build/${project.artifactId}/target</directory>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
@@ -225,6 +229,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
+          <argLine>@{argLine} -Dnet.bytebuddy.experimental=true</argLine>
           <excludes>
             <exclude>**/kata/**</exclude>
           </excludes>

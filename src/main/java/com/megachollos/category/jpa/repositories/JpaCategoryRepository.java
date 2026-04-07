@@ -7,4 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface JpaCategoryRepository extends JpaRepository<CategoryEntity, String> {
 
   List<CategoryEntity> findByParentCategoryUniqueName(String parentCategoryUniqueName);
+
+  List<CategoryEntity> findByParentCategoryIsNull();
 }

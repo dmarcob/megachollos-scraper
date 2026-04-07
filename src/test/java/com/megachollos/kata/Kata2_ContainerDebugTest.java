@@ -7,41 +7,30 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-/**
- * This test has 3 exercises with broken container configurations.
- * Fix them one by one following kata-2-containers.md
- */
+
 @Testcontainers
 class Kata2_ContainerDebugTest {
 
-  // =============================================
-  // Exercise A — Wrong image tag
-  // TODO fix me: this image tag does not exist
-  // =============================================
   @Container
   static PostgreSQLContainer<?> postgresA =
-      new PostgreSQLContainer<>("postgres:999");
+      new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Test
   void exerciseA_wrongImage() {
     assertThat(postgresA.isRunning()).isTrue();
   }
 
-  // =============================================
-  // Exercise B — Wrong credentials
-  // TODO fix me: the container credentials don't match what the test expects
-  // =============================================
+
   @Container
   static PostgreSQLContainer<?> postgresB =
       new PostgreSQLContainer<>("postgres:17-alpine")
-          .withUsername("wrong_user")
-          .withPassword("wrong_pass")
-          .withDatabaseName("wrong_db");
+          .withUsername("megachollos")
+          .withPassword("megachollos")
+          .withDatabaseName("megachollos");
 
   @Test
   void exerciseB_wrongCredentials() {
     // This test connects with username "megachollos", password "megachollos", database "megachollos"
-    // Fix the container above so these credentials work
     try (var conn = java.sql.DriverManager.getConnection(
         postgresB.getJdbcUrl(), "megachollos", "megachollos")) {
       var result = conn.createStatement().executeQuery("SELECT 1");
@@ -51,10 +40,7 @@ class Kata2_ContainerDebugTest {
     }
   }
 
-  // =============================================
-  // Exercise C — Observe the container
-  // Run this test, then open another terminal and run: docker ps
-  // =============================================
+
   @Container
   static PostgreSQLContainer<?> postgresC =
       new PostgreSQLContainer<>("postgres:17-alpine")
@@ -72,9 +58,8 @@ class Kata2_ContainerDebugTest {
     System.out.println("Open another terminal and run: docker ps");
     System.out.println("Then connect with: docker exec -it <CONTAINER_ID> psql -U test -d test");
 
-    // TODO: Uncomment the line below, run the test, observe with docker ps,
-    //       then comment it back when done
-    // Thread.sleep(60000);
+    System.out.println("\n logs ");
+    System.out.println(postgresC.getLogs());
 
     assertThat(postgresC.isRunning()).isTrue();
   }

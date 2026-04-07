@@ -12,7 +12,7 @@ A web application to store and search discounted products from different e-comme
 | Model        | Leaf nodes of the category tree, linked to products in Elasticsearch.              | Micro SD Card          |
 | Brand        | Product brands stored in Elasticsearch.                                            | Samsung                |
 | Ecommerce    | E-commerce sites from which products are retrieved.                                | MediaMarkt             |
-| Product      | A product retrieved from an e-commerce site, identified by model and brand.        | MediaMarkt@A5000394783 |
+| Product      | A product retrieved from an e-commerce site, identified by model and brand.        | MediaMarkt@A5000394782 |
 
 ## Components
 

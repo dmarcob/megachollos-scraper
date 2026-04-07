@@ -1,0 +1,19 @@
+logging:
+  level:
+    io.github.bonigarcia: DEBUG
+
+spring:
+  liquibase:
+    enabled: false
+
+core:
+  swagger:
+    server:
+      url: http://localhost:${server.port}
+      description: Local Server
+  logstash:
+    url: localhost:5044
+
+megachollos:
+  elasticsearch:
+    index: megachollos-productos

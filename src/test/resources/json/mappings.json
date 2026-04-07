@@ -1,0 +1,53 @@
+{
+  "dynamic_templates": [
+    {
+      "objects": {
+        "match_mapping_type": [
+          "object"
+        ],
+        "mapping": {
+          "type": "object"
+        }
+      }
+    },
+    {
+      "strings": {
+        "match_mapping_type": [
+          "string"
+        ],
+        "mapping": {
+          "type": "text",
+          "analyzer": "ngram_analyzer",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            },
+            "dynamic": {
+              "type": "keyword",
+              "normalizer": "sort_normalizer"
+            }
+          }
+        }
+      }
+    },
+    {
+      "non_objects_non_strings": {
+        "match_mapping_type": [
+          "*"
+        ],
+        "mapping": {
+          "type": "text",
+          "analyzer": "ngram_analyzer",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            },
+            "dynamic": {
+              "type": "{dynamic_type}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

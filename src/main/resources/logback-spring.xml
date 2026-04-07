@@ -1,0 +1,61 @@
+<configuration>
+  <springProperty scope="context" name="app" source="spring.application.name"/>
+  <springProperty scope="context" name="logstashUrl" source="core.logstash.url"/>
+  <property name="onlyConsoleProfiles" value="local | test"/>
+
+  <!-- Envio de logs a consola -->
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>
+        %cyan(%d{yyyy-MM-dd HH:mm:ss}) %highlight(%5p) ${PID} %thread --- [${app}] %-50.50logger{40} : %m%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <!-- Envio de logs a Elastic mediante logstash -->
+  <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+    <destination>${logstashUrl}</destination>
+    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+      <providers>
+        <logstashMarkers/>
+        <message/>
+        <pattern>
+          <pattern>
+            {
+            "level": "%level",
+            "app": "${app}",
+            "pid": "${PID}",
+            "thread": "%thread",
+            "class": "%logger{40}",
+            "message": "%message"
+            }
+          </pattern>
+        </pattern>
+        <stackTrace>
+          <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+            <exclude>^sun\.reflect\..*\.invoke</exclude>
+            <exclude>^net\.sf\.cglib\.proxy\.MethodProxy\.invoke</exclude>
+            <rootCauseFirst>true</rootCauseFirst>
+          </throwableConverter>
+        </stackTrace>
+        <timestamp>
+          <fieldName>timestamp</fieldName>
+          <timeZone>Europe/Madrid</timeZone>
+        </timestamp>
+      </providers>
+    </encoder>
+  </appender>
+
+  <springProfile name="${onlyConsoleProfiles}">
+    <root level="INFO">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+  </springProfile>
+
+  <springProfile name="!(${onlyConsoleProfiles})">
+    <root level="INFO">
+      <appender-ref ref="CONSOLE"/>
+      <appender-ref ref="LOGSTASH"/>
+    </root>
+  </springProfile>
+</configuration>

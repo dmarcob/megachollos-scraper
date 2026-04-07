@@ -1,0 +1,231 @@
+Alimentación
+    Nutrición deportiva
+        Aminoácidos
+        Anabólicos naturales
+        Barritas
+        Carbohidratos
+        Control Peso
+        Creatina
+            HSN Raw Series|Creatina monohidrato en polvo
+        Ganadores de peso
+        Geles energéticos
+        Intra entrenamiento
+        Minerales
+        Multivitamínicos
+        Post entrenamiento
+        Pre entrenamiento
+        Proteinas
+            Caseínas
+            Proteínas de Albúmina de Huevo
+            Proteínas de Carne
+            Proteínas Liberación Secuencial
+            Proteínas Sin Gluten
+            Proteínas Sin Lactosa
+            Proteínas Vegetales
+            Proteínas de Suero
+                HSN Sport Series|Evowhey Protein
+                HSN Sport Series|Evoexcel 2.0
+                HSN Sport Series|Evodiet 2.0
+                HSN Sport Series|Evopept 2.0
+                HSN Sport Series|Evowhey Protein sin edulcorantes
+                HSN Sport Series|Evolate 2.0
+                HSN Sport Series|Evohydro 30HD
+                HSN Raw Series|Whey Protein concentrate
+                HSN Raw Series|Whey Protein isolate
+                HSN Essential Series|Golden Protein
+                HSN Essential Series|Smoothie Proteico
+        Vitaminas
+    Carnicería
+        Pollo
+            Dia|Jamoncitos de pollo
+            Dia|Filetes de pechuga de pollo
+            Dia|Longaniza de pollo
+            Dia|Pechuga de pollo
+            Dia|Cuartos traseros de pollo
+            Dia|Albóndigas de pollo
+            Dia|Pechugas enteras de pollo
+            Dia|Alas adobadas de pollo
+            Dia|Solomillo de pollo
+            Dia|Roti de pollo
+        Vacuno
+        Cerdo
+        Pavo
+        Conejo
+        Hamburguesas y carne picada
+    Pescados, mariscos y ahumados
+        Pescados
+        Mariscos
+        Ahumados, salazones y preparados
+        Sucedáneo de angulas y surimi
+    Verduras
+        Ajos, cebollas y puerros
+        Tomates, pimientos y pepinos
+        Calabacín, calabaza y berenjena
+        Judías, brócolis y coliflores
+        Lechuga, escarolas y endivias
+        Patatas y zanahorias
+        Setas y champiñones
+        Verduras y ensaladas preparadas
+        Otras verduras
+    Frutas
+        Frutas de temporada
+        Manzanas
+        Platanos
+        Peras
+        Naranjas y mandarinas
+        Uvas
+        Limones y pomelos
+        Frutas del bosque
+        Frutas tropicales
+        Frutas deshidratadas
+    Leche, huevos y mantequilla
+        Leche
+        Bebidas vegetales
+        Batidos y horchatas
+        Huevos
+        Mantequilla y margarina
+        Nata
+    Yogures y postres
+        Griegos y mousse
+        Yogures naturales
+        Yogures de sabores y frutas
+        Yogures infantiles
+        Yogures desnatados
+        Yogures bífidus y colesterol
+        Yogures de soja y enriquecidos
+        Kéfir y otros yogures
+        Postres y yogures de proteínas
+        Natillas y flan
+        Arroz con leche y postre tradicional
+        Cuajada
+        Gelatinas y otros postres
+    Arroz, pastas y legumbres
+        Arroz
+        Pastas
+        Garbanzos
+        Alubias
+        Lentejas
+        Quinoa y couscous
+    Aceites, salsas y especias
+        Aceites
+        Vinagres y aliños
+        Tomate
+        Mayonesa, ketchup y otras salsas
+        Sal y especias
+    Conservas, caldos y cremas
+        Atún, bonito y caballa
+        Berberechos
+        Mejillones
+        Sardinas y sardinillas
+        Otras conservas de pescado
+        Conservas vegetales
+        Sopas, caldos y purés deshidratados
+        Cremas y caldos líquidos
+    Panes, harinas y masas
+        Pan recien horneado
+        Pan de molde, perritos y hamburguesas.
+        Picos y panes tostados
+        Pan rallado
+        Harinas y levaduras
+        Masas y hojaldres
+        Preparados para postres
+    Café, cacao e infusiones
+        Café
+        Cacao
+        Té e infusiones
+    Azúcar, chocolates y caramelos
+        Azúcar y edulcorantes
+        Miel
+        Mermeladas y frutas en almibar
+        Cremas de cacao
+        Chocolates y bombones
+        Caramelos, chicles y golosinas
+        Dulces de Navidad
+    Galletas, bollos y cereales
+        Galletas
+        Galletas saladas
+        Bollería
+        Cereales
+        Tortitas
+    Patatas fritas, encurtidos y frutos secos
+        Patatas fritas y aperitivos
+        Aceitunas y encurtidos
+        Frutos secos
+    Pizzas y platos preparados
+        Pizzas
+        Precocinados envasados
+        Comida internacional
+        Tortillas y empanadas
+        Gazpachos y salmorejos
+    Congelados
+        Helados y hielo
+        Pizzas, bases y masas
+        Pescado y marisco
+        Carne y pollo
+        Verduras, hortalizas y salteados
+        Patatas fritas
+        Croquetas y rebozados
+        Churros y postres
+        Lasañas y pasta
+    Agua, refrescos y zumos
+        Agua
+        Cola
+        Naranja
+        Limón, lima limón
+        Tés fríos, cafés frios
+        Tónicas
+        Gaseosa
+        Bebidas energéticas
+        Bebidas isotónicas
+        Zumos
+        Otras bebidas
+    Cervezas, vinos y bebidas con alcohol
+        Cervezas
+        Cervezas especiales
+        Cervezas con limón
+        Cervezas sin alcohol
+        Tinto de verano y sangría
+        Vino tinto
+        Vino blanco
+        Cavas y sidra
+        Vino rosado
+        Ginebra y vodka
+        Ron y whisky
+        Vermouth
+        Cremas y licores
+        Brandy
+    Limpieza y hogar
+        Cuidado de la ropa
+        Lavavajillas
+        Papel higiénico, de cocina, servilletas
+        Utensilios de limpieza
+        Bolsas de basura
+        Lejía y otros químicos
+        Cristales y suelos
+        Limpia muebles y multiusos
+        Limpieza baño y WC
+        Limpieza cocina y vitrocerámica
+        Papel de aluminio, horno y film
+        Insecticidas
+        Ambientadores
+        Calzado
+        Útiles del hogar, pilas, bombillas
+    Perfumería, higiene, salud
+        Hidratación corporal
+        Gel de ducha y esponjas
+        Cuidado bucal
+        Desodorantes
+        Champú
+        Acondicionadores y mascarillas
+        Espumas y fijadores
+        Tintes
+        Limpieza facial, crema facial
+        Quitaesmalte
+        Afeitado
+        Depilación
+        Colonias
+        Jabón de manos
+        Cremas solares
+        Compresas y cuidado íntimo
+        Complementos nutricionales
+        Parafarmacia

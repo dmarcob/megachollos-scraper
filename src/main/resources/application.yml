@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: megachollos
+  profiles:
+    active: ${PROFILE:local}
+  liquibase:
+    contexts: ${spring.profiles.active}
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=30d
+
+springdoc:
+  show-actuator: true
+  api-docs:
+    path: /api-docs # http://localhost:8080/api-docs, http://localhost:8080/swagger-ui/index.html
+
+management:
+  endpoint:
+    # Muestra la salud del micro, UP or DOWN
+    health:
+      enabled: true
+      show-details: always
+      probes:
+        enabled: true
+    # Muestra las metricas de prometheus
+    prometheus:
+      enabled: true
+    # Muestra las caches usadas y permite vaciarlas
+    caches:
+      enabled: true
+    # Muestra el nivel de log y permite cambiarlo dinamicamente
+    loggers:
+      enabled: true
+    # Muestra los endpoints que expone el micro
+    mappings:
+      enabled: true
+    # Muestra las tareas programadas con @Scheduled
+    scheduledtasks:
+      enabled: true
+    # Muestra información personalizable sobre el micro (versión de Core, ..)
+    info:
+      enabled: true
+    # Muestra métricas de micrometer
+    metrics:
+      enabled: true
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health, prometheus, caches, loggers, mappings, scheduledtasks, info, metrics

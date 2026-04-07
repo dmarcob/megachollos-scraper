@@ -1,0 +1,871 @@
+Electrónica
+    Accesorios para Automóviles
+    Almacenamiento de datos
+        Discos duros
+            Discos duros internos
+                Western Digital|Disco duro interno
+                Seagate|Disco duro interno
+                Samsung|Disco duro interno
+                Adata|Disco duro interno
+                Toshiba|Disco duro interno
+                Crucial|Disco duro interno
+            Discos duros externo
+                Seagate|Disco duro externo
+                Western Digital|disco duro externo
+                Samsung|Disco duro externo
+        Memorias USB
+            Memorias USB 2.0
+                SanDisk|USB 2.0 Cruzer Blade
+                Kingston|USB 2.0 DataTraveler 100 G3
+                Samsung|USB 2.0 BAR Plus
+                PNY|USB 2.0 Attaché 3
+                Transcend|USB 2.0 JetFlash 700
+            Memorias USB 3.0
+                SanDisk|USB 3.0 Ultra Flair
+                Kingston|USB 3.0 DataTraveler 100 G4
+                Samsung|USB 3.0 BAR Plus
+                Lexar|USB 3.0 JumpDrive M20
+                PNY|USB 3.0 Turbo Attaché 3
+                Corsair|USB 3.0 Flash Voyager GTX
+                ADATA|USB 3.0 UV320
+            Memorias USB tipo C
+                SanDisk|USB Type C Ultra Dual Drive
+                Kingston|DataTraveler 80 USB-C
+                Samsung|USB Type C FIT Plus
+                Lexar|JumpDrive USB 3.1 Type-C
+                PNY|USB Type C Duo Link
+                ADATA|UD330 USB 3.2 Type C
+                Corsair|Flash Voyager GTX USB-C
+        Tarjetas de memoria
+            Tarjetas SD
+                Samsung|Tarjeta SD
+                Sandisk|Tarjeta SD
+                Lexar|Tarjeta SD
+            Tarjetas microSD
+                SanDisk|Tarjeta Micro SD
+                Samsung|Tarjeta Micro SD
+        SSD
+            Samsung|Disco duro SSD
+            Kingston|Disco duro SSD
+            Western Digital|Disco duro SSD
+            Crucial|Disco duro SSD
+            Seagate|Disco duro SSD
+    Audio y Video
+        Altavoces inalámbricos
+            Sonos|Altavoz inalámbrico
+            Sonos|Subwoofer
+            JBL|Flip6
+            JBL|Charge5
+            JBL|Flip5
+            JBL|Clip3
+            JBL|Flip Essential
+            JBL|Go3
+            JBL|Boombox2
+            JBL|Clip4
+            JBL|Link Music
+            Amazon|Echo
+            Google|Home
+            Google|Nest
+            Bose|Altavoces
+            Anker|Altavoces
+            Xiaomi|Altavoces
+        Auriculares
+            Apple|EarPods
+            Apple|AirPods
+            Apple|AirPods Pro
+            Apple|AIrPods 2
+            Apple|Airpods 3
+            Apple|AirPods Pro 2
+            JBL|Auriculares
+            Samsung|Galaxy Buds
+            Sony|Auriculares
+            Skullcandy|Auriculares
+            Sennheiser|Auriculares
+            Xiaomi|Auriculares
+            Jabra|Auriculares
+            Soundcore|Auriculares
+            Marshall|Major IV
+            Anker|Soundcore Liberty 3 Pro
+        Barras de sonido
+            Harman Kardon|Barra de sonido
+            Bose|Barra de sonido
+            LG|Barra de sonido
+            Samsung|Barra de sonido
+    Cámaras y Fotografía
+        Cámaras digitales
+            Cámaras compactas
+            Cámaras réflex (DSLR)
+            Cámaras sin espejo (Mirrorless)
+        Drones y accesorios
+            Drones de cámara profesional
+                DJI|Mavic 3
+                DJI|Phantom 4 Pro V2.0
+                Autel Robotics|EVO II Pro
+                Skydio|Skydio 2
+                Parrot|Anafi USA
+            Drones para principiantes
+                DJI|Mini 2
+                DJI|Air 2S
+                Hubsan|Zino 2
+                Potensic|T18
+                Holy Stone|HS720
+            Accesorios para drones
+                DJI|Gimbal Osmo Mobile 3
+                DJI|Fly More Kit for Mavic Air 2
+                Parrot|Anafi Remote Control
+                DJI|Smart Controller
+                PGYTech|Landing Gear Extensions for Mavic Air 2
+        Accesorios para Cámaras
+            Trípodes
+                Manfrotto|Trípode MT190XPRO3
+                Joby|Trípode GorillaPod 5K
+                Benro|Trípode TMA38CL
+                Velbon|Trípode EX-430
+                Sirui|Trípode ET-2204
+            Lentes y filtros
+                Canon|Lente EF 50mm f/1.8 STM
+                Nikon|Lente AF-S DX 35mm f/1.8G
+                Sony|Lente FE 24-70mm f/2.8 GM
+                Tamron|Lente 70-200mm f/2.8 Di VC USD G2
+                Hoya|Filtro UV HD
+            Baterías y cargadores
+                Canon|Batería LP-E6
+                Nikon|Batería EN-EL15
+                Sony|Batería NP-FW50
+                GoPro|Batería HERO10 Black
+                Anker|Cargador de batería para cámaras Canon y Nikon
+    Electrodomésticos
+        Aire acondicionado y ventiladores
+            Aires acondicionados portátiles
+                DeLonghi|Aire acondicionado portátil Pinguino PAC AN112 Silent
+                TCL|Aire acondicionado portátil TAC-12CP
+                Black+Decker|Aire acondicionado portátil BPACT14WT
+                Whynter|Aire acondicionado portátil ARC-122DS
+                Honeywell|Aire acondicionado portátil MN10CES
+            Ventiladores de pie o de torre
+                Rowenta|Ventilador de torre VU6670 Turbo Silence
+                Dyson|Ventilador de torre Pure Cool TP04
+                Lasko|Ventilador de torre T42951
+                Honeywell|Ventilador de torre HYF290B
+                Bionaire|Ventilador de torre BT19
+        Electrodomésticos de cocina
+            Cafeteras y teteras eléctricas
+                Nespresso|Cafetera Vertuo Plus
+                DeLonghi|Cafetera Magnifica S
+                Hamilton Beach|Cafetera FlexBrew
+                Breville|Cafetera Barista Express
+                Keurig|Cafetera K-Elite
+            Hervidores de agua
+                Philips|Hervidor de agua HD9306/20
+                Tefal|Hervidor de agua KI150D10
+                Bosch|Hervidor de agua TWK8613P
+                Russell Hobbs|Hervidor de agua 20460-70
+                Smeg|Hervidor de agua KLF03
+            Licuadoras y batidoras
+                Ninja|Licuadora BL610 Professional
+                Philips|Licuadora HR3652/00
+                Oster|Licuadora 6812
+                Hamilton Beach|Licuadora 58148
+                Vitamix|Licuadora E310 Explorian
+            Microondas y hornos
+                Samsung|Microondas ME21M706BAS
+                LG|Microondas MH6535GDS
+                Panasonic|Microondas NN-SN686S
+                Sharp|Microondas R-820JS
+                Whirlpool|Microondas MWP 2530 SL
+        Electrodomésticos personales
+            Cepillos de dientes eléctricos
+                Philips|Cepillo de dientes Sonicare HX9911/12
+                Oral-B|Cepillo de dientes Genius 10000
+                Braun|Cepillo de dientes Oral-B Pro 2 2000N
+                Fairywill|Cepillo de dientes eléctrico FW-507
+                Colgate|Cepillo de dientes Hum
+            Maquinillas de afeitar eléctricas
+                Philips|Maquinilla de afeitar eléctrica Series 9000 S9987/55
+                Braun|Maquinilla de afeitar eléctrica Series 7 7893s
+                Panasonic|Maquinilla de afeitar eléctrica ES-LV65-S
+                Remington|Maquinilla de afeitar eléctrica F5-5800
+                Philips|Maquinilla de afeitar eléctrica Series 5000 S5587/36
+            Planchas de cabello
+                Rowenta|Planchas de cabello SF3132
+                Remington|Planchas de cabello S8590
+                Babyliss|Planchas de cabello ST395E
+                Philips|Planchas de cabello HP8321/00
+                GHD|Planchas de cabello Platinum+
+            Secadores de pelo
+                Dyson|Secador de pelo Supersonic
+                Philips|Secador de pelo HP8232/00
+                Remington|Secador de pelo D3190
+                Rowenta|Secador de pelo CV5361F0
+                Babyliss|Secador de pelo Pro Digital 6000E
+    Juguetes electrónicos
+        Robots y gadgets
+            Juguetes interactivos
+                FurReal|Juguete interactivo FurReal Friends Munchin Rex
+                VTech|Juguete interactivo Baby Shark
+                Hasbro|Juguete interactivo FurReal Friends Ricky
+                Fisher-Price|Juguete interactivo Think & Learn Smart Cycle
+                WowWee|Juguete interactivo Fingerlings
+            Juguetes educativos electrónicos
+                VTech|Juguete educativo electrónico Sit-to-Stand Learning Walker
+                LeapFrog|Juguete educativo electrónico LeapStart 3D
+                Fisher-Price|Juguete educativo electrónico Think & Learn Code-a-Pillar
+                VTech|Juguete educativo electrónico Turn and Learn Driver
+                LeapFrog|Juguete educativo electrónico LeapPad Ultimate
+            Robots programables
+                Lego|Robot programable Mindstorms EV3
+                Makeblock|Robot programable mBot
+                Sphero|Robot programable SPRK+
+                Ozobot|Robot programable Bit
+                Wonder Workshop|Robot programable Dash
+        Consolas
+            Consolas portátiles
+                Nintendo|Switch OLED
+                Nintendo|Switch Lite
+                PlayStation|PS Vita
+                GPD|Win 3
+                Ayn|Odyssey
+                GPD|Win 2
+                Acer|Predator Triton 300 SE
+                Playdate|Consola portátil
+                Steam|Deck
+                Anbernic|RG351MP
+                Ayn|Rei
+                GPD|Pocket 3
+            Consolas de última generación
+                Sony|PlayStation 5
+                Microsoft|Xbox Series X
+                Microsoft|Xbox Series S
+            Consolas retro
+                Nintendo|Super Nintendo Classic Mini
+                Sega|Genesis Mini
+                Sony|PlayStation Classic
+                NeoGeo|Mini
+                Atari|Flashback 8 Gold
+            Consolas de videojuegos en la nube
+                Google|Stadia
+                NVIDIA|Shield TV Pro
+                Amazon|Luna Controller
+                Razer|Edge 5G
+            Realidad virtual
+                Oculus|Quest 2
+                Oculus|Rift S
+                HTC|Vive Pro 2
+                Sony|PlayStation VR
+                Valve|Index VR Kit
+                HP|Reverb G2
+                Pimax|8K X
+                Samsung|Odyssey+
+                Lenovo|Explorer VR
+                Microsoft|HoloLens 2
+    Móviles y accesorios
+        Accesorios para móviles
+            Cargadores y cables
+                Anker|PowerPort 3 Nano
+                Aukey|Cargador USB-C 20W
+                Spigen|Cargador inalámbrico MagFit
+                Belkin|BoostCharge USB-C PD 3.0
+                RAVPower|Cargador de coche 30W
+                UGREEN|Cable USB-C a Lightning
+                Anker|Cable USB-A a USB-C
+                Amazon|Basic Cable Lightning
+                Anker|PowerLine+ II Lightning Cable
+                UGREEN|Cable HDMI 2.0
+            Fundas y carcasas
+                Spigen|Ultra Hybrid para iPhone
+                OtterBox|Defender para Samsung
+                Mophie|Funda batería para iPhone
+                Apple|Funda de cuero para iPhone
+                UAG|Pathfinder Series para iPhone
+                Samsung|Funda de silicona para Galaxy
+                Speck|Presidio Grip para iPhone
+                Caseology|Skyfall para Samsung Galaxy
+                Incipio|DualPro para iPhone
+                Esr|Clear Case para iPhone
+            Power banks (baterías externas)
+                Anker|PowerCore 10000
+                RAVPower|Power Bank 20000mAh
+                Xiaomi|Mi Power Bank 3
+                AUKEY|PB-N50 20000mAh
+                Zendure|A3PD 10000mAh
+                Mophie|Powerstation XXL
+                Belkin|BoostCharge 10000mAh
+                Anker|PowerCore Slim 10000
+                Anker|PowerCore Fusion 5000
+                Goal Zero|Sherpa 100AC
+            Protectores de pantalla
+                Belkin|InvisiGlass Ultra para iPhone 14
+                ZAGG|InvisibleShield Glass Elite+
+                Spigen|GlasTR Slim para Galaxy S22
+                Anker|Screen Protector para iPhone 13
+                OtterBox|Amplify Glass para iPhone 14
+                iCarez|Protector de pantalla para iPad Pro
+                Tech21|Impact Shield para iPhone 12
+                Panzerglass|Screen Protector para Samsung Galaxy
+                Jetech|Protector de pantalla para iPhone 14
+                Moshi|IonGlass para Galaxy S22
+            Soportes y trípodes
+                Manfrotto|Trípode Compact Action
+                Joby|GorillaPod 3K Kit
+                Amazon|Basics Trípode de aluminio
+                UBeesize|Trípode con control remoto para teléfono
+                Neewer|Trípode de cámara 660B
+                Vanguard|Alta Pro 263AB 100
+                Benro|Trípode TMA38CL
+                Cullmann|Nanomax 230T
+                JOBY|GripTight Pro 2 GorillaPod
+                K&F Concept|Trípode de carbono
+            Tarjetas SIM y accesorios
+                SanDisk|MicroSDXC 128GB Extreme Pro
+                Samsung|MicroSDXC EVO Plus 128GB
+                Kingston|MicroSDXC Canvas React Plus
+                T-Mobile|SIM Card Prepaid Kit
+                Verizon|SIM Card for iPhone
+                AT&T|SIM Card for Android
+                E-SIM|Tarjeta eSIM de Claro
+                Tracfone|SIM Kit for Smartphones
+                SIM|Adaptador para tarjeta SIM Nano a Micro
+                Gigsky|eSIM de datos internacionales
+        Móviles
+            iPhones
+                Apple|iPhone
+            Smartphones
+                Samsung|Galaxy S
+                Samsung|Galaxy S Ultra
+                Samsung|Galaxy Note
+                Samsung|Galaxy Z Fold
+                Samsung|Galaxy Z Flip
+                Samsung|Galaxy A
+                Samsung|Galaxy M
+                Samsung|Galaxy F
+
+                Google|Pixel
+                Google|Pixel XL
+
+                OnePlus|Nord
+                OnePlus|Pro
+
+                Xiaomi|Mi
+                Xiaomi|Redmi
+                Xiaomi|Poco
+                Motorola|Moto G
+                Motorola|Moto E
+                Motorola|Edge
+                Motorola|One
+
+                Realme|GT
+                Realme|Narzo
+                Realme|X
+
+                Oppo|Find X
+                Oppo|Reno
+                Oppo|A Series
+                Oppo|F Series
+
+                Vivo|V Series
+                Vivo|Y Series
+                Vivo|X Series
+
+                Honor|Magic
+                Honor|X Series
+                Huawei|Mate
+                Huawei|P Series
+                Huawei|Nova
+
+                Asus|Zenfone
+                Asus|ROG Phone
+                Asus|Zenfone Max
+
+                LG|V Series
+                LG|G Series
+                LG|K Series
+
+                Sony|Xperia
+                Sony|Xperia Compact
+                Sony|Xperia Pro
+
+                Lenovo|Z Series
+                ZTE|Axon
+                Nokia|X Series
+                Nokia|G Series
+                TCL|10 Series
+
+                Infinix|Zero
+                Infinix|Note
+                Tecno|Camon
+                Micromax|In Series
+                Realme|C Series
+                Poco|X Series
+    Ordenadores y accesorios
+        Accesorios para ordenadores
+            Alfombrillas para teclado y ratón
+                Corsair|MM300 Anti-Fray Cloth
+                Logitech|G640 Cloth Gaming Mouse Pad
+                Razer|GigaPad
+                SteelSeries|Qck Heavy
+                HyperX|Fury S Pro
+                Redragon|P001 Game Mouse Pad
+                Roccat|Taito Control
+                Aula|Mouse Pad XXL
+                Logitech|G640 Large Mousepad
+                Zowie|G-SR-SE
+            Cámaras web
+                Logitech|C922 Pro Stream
+                Razer|Kiyo
+                Microsoft|LifeCam HD-3000
+                Creative|Live! Cam Chat HD
+                Logitech|BRIO Ultra HD
+                Ausdom|AW615
+                Anker|PowerConf C300
+                Aukey|PC-LM1E
+                Papalook|PA930
+                Logitech|C920S HD Pro
+            Monitores
+                Dell|UltraSharp U2720Q
+                Samsung|Odyssey G7
+                LG|27GL850-B
+                BenQ|EX2780Q
+                Acer|Predator X34
+                ASUS|TUF Gaming VG27AQ
+                ViewSonic|VP3268-4K
+                MSI|Optix MAG272CQR
+                HP|Omen 27i
+                Samsung|C49HG90DMU
+            Ratones y mousepads
+                Logitech|G502 HERO
+                Razer|DeathAdder V2
+                Corsair|Dark Core RGB/SE
+                SteelSeries|Rival 600
+                Microsoft|Surface Arc Mouse
+                Redragon|M601 CENTROPHORUS
+                Roccat|Kone Pro Air
+                Logitech|MX Master 3
+                SteelSeries|Sensei Ten
+                Logitech|G Pro X Superlight
+            Soportes y bases para laptops
+                Targus|Laptop Stand
+                Rain Design|mStand
+                Cooler Master|NotePal X3
+                Nexstand|K2 Portable Laptop Stand
+                Ergotron|LX Desk Mount
+                Kensington|SmartFit Laptop Riser
+                Laptop|Stand by Roost
+                Jabra|Laptop Stand
+                MOFT|Invisible Laptop Stand
+                UGREEN|Laptop Stand
+            Teclados
+                Logitech|G Pro X
+                Corsair|K95 RGB Platinum XT
+                Razer|BlackWidow V3
+                SteelSeries|Apex Pro
+                Redragon|K552 Kumara
+                Logitech|K780 Multi-Device Wireless
+                Keychron|K8 Wireless Mechanical
+                HyperX|Alloy FPS Pro
+                Asus|ROG Strix Scope
+                Leopold|FC750R
+                Keychron|K1 versión 6
+                Keychron|K2
+                Keychron|K2 Intercambiable en Caliente
+                Keychron|K2 Sin Retroiluminación
+                Keychron|K3
+                Keychron|K3 Versión 3
+                Keychron|K3 Sin Retroiluminación
+                Keychron|K4
+                Keychron|K5
+                Keychron|K6
+                Keychron|K7
+                Keychron|K8
+                Keychron|K8
+                Keychron|K10
+                Keychron|K12
+                Keychron|K14
+            Procesadores
+                Intel|Core i9-13900K
+                Intel|Core i7-13700K
+                Intel|Core i5-13600K
+                Intel|Core i5-12600K
+                AMD|Ryzen 9 7950X
+                AMD|Ryzen 7 7800X3D
+                AMD|Ryzen 5 7600X
+                AMD|Ryzen 7 5800X
+                Intel|Core i3-12100F
+                Intel|Core i5-12400F
+                AMD|Ryzen 5 5600X
+                Intel|Core i9-12900K
+                AMD|Ryzen 9 5900X
+                Intel|Core i7-11700K
+                AMD|Ryzen 7 3700X
+                Intel|Core i5-11400F
+                AMD|Ryzen 5 3500X
+                Intel|Core i9-11900K
+                AMD|Ryzen 5 3400G
+                Intel|Core i5-10400F
+                AMD|Ryzen 3 3200G
+                Intel|Core i7-9700K
+                AMD|Ryzen 7 2700X
+                Intel|Xeon W-2295
+                Intel|Core i3-9100F
+                AMD|Athlon 3000G
+                Intel|Core i9-9980XE
+                Intel|Core i7-9700KF
+            Tarjetas gráficas
+                NVIDIA|GeForce RTX 4090
+                NVIDIA|GeForce RTX 4080
+                NVIDIA|GeForce RTX 4070 Ti
+                NVIDIA|GeForce RTX 3060 Ti
+                AMD|Radeon RX 7900 XT
+                AMD|Radeon RX 7800 XT
+                NVIDIA|GeForce GTX 1660 Ti
+                NVIDIA|GeForce RTX 3070
+                NVIDIA|GeForce RTX 3080 Ti
+                NVIDIA|GeForce GTX 1650
+                NVIDIA|GeForce RTX 3090
+                AMD|Radeon RX 6700 XT
+                NVIDIA|GeForce GTX 1060 6GB
+                AMD|Radeon RX 5700 XT
+                NVIDIA|GeForce RTX 2080 Ti
+                NVIDIA|GeForce GTX 1050 Ti
+                AMD|Radeon RX 5600 XT
+                NVIDIA|GeForce RTX 2060 Super
+                NVIDIA|GeForce GTX 1080 Ti
+                NVIDIA|GeForce RTX 3050
+                NVIDIA|GeForce GTX 1050
+                NVIDIA|GeForce RTX 3060
+                AMD|Radeon RX 6500 XT
+                NVIDIA|GeForce RTX 2070 Super
+                AMD|Radeon RX 6600 XT
+                NVIDIA|GeForce GTX 980 Ti
+                NVIDIA|GeForce RTX 3090 Ti
+                NVIDIA|GeForce RTX 2080 Super
+                AMD|Radeon RX 5500 XT
+                NVIDIA|GeForce GTX 780 Ti
+            RAM
+                Corsair|Vengeance LPX 16GB (2 x 8GB) DDR4-3200
+                G.Skill|Ripjaws V 16GB (2 x 8GB) DDR4-3600
+                Kingston|HyperX Fury 16GB (2 x 8GB) DDR4-3200
+                Corsair|Vengeance RGB Pro 32GB (2 x 16GB) DDR4-3600
+                Crucial|Ballistix 16GB (2 x 8GB) DDR4-3200
+                ADATA|XPG GAMMIX D30 16GB (2 x 8GB) DDR4-3000
+                G.Skill|Trident Z Neo 32GB (2 x 16GB) DDR4-3600
+                Corsair|Vengeance LPX 8GB (2 x 4GB) DDR4-2666
+                HyperX|Predator 32GB (2 x 16GB) DDR4-3200
+                TeamGroup|T-Force Vulcan Z 16GB (2 x 8GB) DDR4-3200
+                Corsair|Dominator Platinum RGB 32GB (2 x 16GB) DDR4-3200
+                G.Skill|Trident Z Royal 32GB (2 x 16GB) DDR4-3600
+                Patriot|Viper 4 16GB (2 x 8GB) DDR4-3000
+                Crucial|Sport LT 8GB (2 x 4GB) DDR4-2666
+                Corsair|Vengeance LPX 64GB (4 x 16GB) DDR4-2666
+                Kingston|Fury Beast 16GB (2 x 8GB) DDR4-3200
+                Corsair|Vengeance RGB Pro SL 16GB (2 x 8GB) DDR4-3600
+                G.Skill|Ripjaws 32GB (2 x 16GB) DDR4-3200
+                Kingston|HyperX Impact 16GB (2 x 8GB) DDR4-2400
+                Corsair|Vengeance LPX 8GB (1 x 8GB) DDR4-3000
+                Crucial|Ballistix Elite 16GB (2 x 8GB) DDR4-3600
+                TeamGroup|T-Force Dark Za 16GB (2 x 8GB) DDR4-3200
+                Corsair|Vengeance LPX 32GB (2 x 16GB) DDR4-2933
+                G.Skill|Ripjaws V 32GB (2 x 16GB) DDR4-3000
+                Adata|XPG Spectrix D41 16GB (2 x 8GB) DDR4-3600
+                Corsair|Vengeance LPX 64GB (2 x 32GB) DDR4-3200
+        Ordenadores de torre
+            HP|Omen 40L
+            Dell|Alienware Aurora R13
+            Corsair|Vengeance i7200
+            MSI|Aegis RS
+            Acer|Predator Orion 5000
+            Lenovo|Legion T5
+            CyberPowerPC|Gamer Xtreme VR
+            HP|Pavilion TG01
+            Thermaltake|Level 20 GT
+            Cooler Master|MasterBox Q300L
+        Ordenadores portátiles
+            Apple|MacBook Pro 16" M2
+            Apple|MacBook Air M2
+            Dell|XPS 13
+            HP|Spectre x360 14
+            Lenovo|ThinkPad X1 Carbon Gen 10
+            ASUS|ZenBook 14
+            Acer|Predator Helios 300
+            MSI|GF63 Thin
+            Razer|Blade 15 Advanced
+            Microsoft|Surface Laptop 5
+        MiniPCs
+            Intel|NUC 11 Performance
+            Intel|NUC 10 Extreme
+            ASUS|PN50 Mini PC
+            Gigabyte|Brix Pro
+
+            Beelink|GT King
+            Beelink|GT King Pro
+            Beelink|U59
+            Beelink|SER5
+            Beelink|U59 Pro
+            Beelink|T4
+            Beelink|L55
+            Beelink|EQ12
+            Beelink|GT-R
+            Beelink|GT1 Mini
+            Beelink|S1
+            Beelink|GT Mini
+            Beelink|GT1 Ultimate
+            Beelink|A1
+            Beelink|M1
+            Beelink|M2
+            Beelink|X45
+            Beelink|X55
+            Beelink|T5
+            Beelink|J45
+            Beelink|SEi8
+            Beelink|SEi10
+            Beelink|MP1
+            Beelink|P1
+            Beelink|P2
+            Beelink|P3
+            Beelink|S2
+            Beelink|R1
+            Beelink|V1
+            Beelink|V2
+            Beelink|N41
+            Beelink|N42
+            Beelink|N43
+            Beelink|N44
+            Beelink|N45
+            Beelink|N46
+
+            Lenovo|ThinkCentre M90n-1
+            Zotac|ZBOX CI660 nano
+            MINISFORUM|EliteMini X400
+            Raspberry Pi|4 Model B
+            HP|Elite Slice
+            ASRock|BeeBox N3000
+            Intel|NUC 9 Extreme
+            MSI|Cubi 5
+            Dell|OptiPlex 7070 Ultra
+            Chuwi|HiBox Mini PC
+            ACEPC|T11 Mini PC
+            AWOW|Mini PC Windows 10
+            T9|Mini PC
+            MeLE|PCG02 Fanless Mini PC
+            Acer|Revo One RL85
+            MINISFORUM|UM700
+            Raspberry Pi|400
+            Brix|GB-BRR7H-8550
+            Intel|NUC 8 Home
+            Lenovo|ThinkCentre M75q-1
+            HP|Elitedesk 705 G4
+            ASUS|Chromebox 4
+            Gigabyte|ZBOX MI640
+            Beelink|U59
+            MINISFORUM|UM350
+            Zotac|ZBOX CI660
+            Chuwi|LarkBox Pro
+            Raspberry Pi|3 B+
+            GPD|Win 3 Mini PC
+            MSI|Cubig Mini PC
+            ASRock|DeskMini 110
+            Zotac|ZBOX CI340 Nano
+            Intel|NUC 7 Essential
+            Gigabyte|ZBOX C Series
+            Raspberry Pi|Zero W
+            Beelink|T4 Mini PC
+            Mini|PC Intel Core i5 10th Gen
+            Odroid|HC4
+            GPD|Pocket 2
+            Pipo|X9 Mini PC
+            Anbernic|RG351MP
+    Redes y almacenamiento NAS
+        Dispositivos NAS
+            Synology|NAS DS920+
+            Synology|NAS DS220+
+            Synology|NAS DS218+
+            QNAP|NAS QNAP TS-453D
+            QNAP|NAS QNAP TS-251D
+            QNAP|NAS QNAP TS-873A
+            Western Digital|NAS WD My Cloud EX2 Ultra
+            Western Digital|NAS WD My Cloud PR4100
+            Asustor|NAS AS5304T
+            Asustor|NAS AS1002T
+            TerraMaster|NAS F4-210
+            TerraMaster|NAS F2-221
+            Buffalo|NAS TeraStation 3410DN
+            Buffalo|NAS LinkStation 220
+        Enrutadores
+            TP-Link|Archer AX6000
+            Asus|RT-AX88U
+            Netgear|Nighthawk AX12
+            Linksys|Velop AC6600
+            D-Link|DIR-882
+            TP-Link|Archer C7
+            Asus|RT-AC68U
+            Netgear|Nighthawk R7000
+            TP-Link|Archer AX73
+            Linksys|EA9500
+            TP-Link|Deco X60
+            Asus|RT-AX86U
+            TP-Link|Archer A7
+            Tenda|AC23
+            Netgear|Orbi RBK852
+            D-Link|DIR-3060
+            Asus|ZenWiFi AX XT8
+            Netgear|Nighthawk AX8
+            TP-Link|Archer C1200
+            Linksys|WRT3200ACM
+            Xiaomi|Mi AIoT Router AX3600
+            TP-Link|Archer AX10
+            Netgear|Orbi RBK50
+            D-Link|AC2000
+            Asus|GT-AX11000
+            TP-Link|Archer VR900
+            Netgear|Orbi RBK13
+            Linksys|Velop AC2200
+            Tenda|AC8
+            Asus|RT-AC86U
+            TP-Link|Archer AX21
+            Zyxel|NBG6716
+            Ubiquiti|UniFi Dream Machine
+            TP-Link|Deco M5
+            Netgear|Orbi RBK753
+            Linksys|Max-Stream AC2200
+            Tenda|MW6
+            Asus|RT-AC5300
+            Xiaomi|Mi Router 4A
+            TP-Link|Archer C9
+            Netgear|Nighthawk X6
+            D-Link|DIR-1960
+    Tecnología portátil
+        Gafas de realidad aumentada
+            Microsoft|HoloLens
+            Magic Leap|One AR Headset
+            Nreal|Light AR Glasses
+            Vuzix|M4000 AR Glasses
+            Epson|Moverio
+            Lenovo|ThinkReality
+            Google|Glass Enterprise Edition
+            RAEY|AR Smart Glasses
+            Blippar|AR Glasses
+            Xiaomi|Mi Air Glass
+        Gafas de realidad virtual
+            Oculus|Quest
+            HTC|Vive Pro
+            Sony|PlayStation VR
+            Valve|Index VR Headset
+            Samsung|Odyssey+ VR Headset
+            Pimax|8K X VR Headset
+            HP|Reverb G2 VR Headset
+            Oculus|Rift S VR Headset
+            Microsoft|Mixed Reality Headset
+            Varjo|VR Headset
+        Pulseras de actividad
+            Xiaomi|Mi Band
+            Fitbit|Charge
+            Garmin|Vivosmart
+            Samsung|Galaxy Fit
+            Huawei|Band
+            Honor|Band
+
+            Amazfit|Band
+            Amazfit|GTS
+            Amazfit|Band
+            Realme|Band
+
+            Withings|Steel HR Sport
+        Relojes inteligentes
+            Polar|Vantage
+            Suunto|Baro
+            Fitbit|Versa
+            Apple|Watch
+            Amazfit|GTR
+            Huawei|Watch
+
+            Garmin|Forerunner
+            Garmin|Venu
+            Garmin|Fenix
+
+            Fossil|Gen
+            Mobvoi|TicWatch
+            Lemfo|Lempod
+            Coros|Pace
+            TicWatch|Pro
+            Huawei|Watch GT
+            Samsung|Galaxy Watch
+    Televisores y Video
+        Proyectores
+            Pantallas para proyectores
+                Elite Screens|Sable Frame B2
+                VIVO|120 Inch 16:9 Projector Screen
+                Silver Ticket|150 Inch Fixed Frame Projector Screen
+                Da-Lite|Tensioned Advantage 92"
+                Epson|ELPSC80 Projector Screen
+                Screen Innovations|Zero Edge Pro 4K
+                XGIMI|Vega Projector Screen 100"
+                Mantis|Electric Projector Screen 120"
+                VIVOHOME|Motorized Projector Screen 100"
+                Auto Tension|120 Inch Projector Screen
+            Proyectores portátiles
+                Anker|Nebula Capsule
+                XGIMI|MoGo Pro
+                ViewSonic|M1 Mini Plus
+                Kodak|Luma 350
+                LG|PF50KA
+                Epson|EF-100
+                BenQ|GS2
+                AAXA|P300 Pico Projector
+                Kodak|Mondo Mini Plus
+                RIF6|Cube 4K Projector
+            Proyectores para cine en casa
+                Epson|Home Cinema
+                BenQ|4K
+                ViewSonic|4K
+                Sony|VPL
+                LG|HU80KA 4K
+                BenQ|4K Projector
+                Epson|LS500 4K
+                Anker|Nebula Cosmos Max
+        Televisores
+            Televisores 4K
+                LG|4K
+                Sony|4K
+                TCL|4K
+                Hisense|4K
+                Samsung|4K
+                Sony|4K
+                Vizio|4K
+                Toshiba|4K
+            Televisores 8K
+                LG|8K
+                Sony|Bravia 8K
+                TCL|8K
+                Sharp|8K
+                Hisense|8K
+                Vizio|8K
+                Samsung|8K
+                LG|8K
+            Televisores LED
+                Samsung|LED UHD
+                LG|LED UHD
+                Sony|Bravia LED
+                TCL|4K UHD LED
+                Vizio|LED 4K Smart TV
+                Hisense|LED ULED 4K
+                Samsung|LED 1080p
+                Sharp|LED TV 4K
+                Philips|LED UHD Smart TV
+                Toshiba|LED 4K TV
+            Televisores OLED
+                LG|OLED
+                Sony|Bravia OLED
+                Philips|OLED
+                Panasonic|OLED
+                Vizio|OLED
+                Hisense|OLED
+            Televisores inteligentes
+                Samsung|Smart TV QLED
+                LG|Smart OLED
+                Sony|Bravia Smart TV
+                TCL|Smart TV
+                Vizio|Smart TV
+                Samsung|Smart TV
+                LG|NanoCell Smart TV
+                Hisense|Smart
+                Toshiba|Fire TV Edition Smart TV
+                Sharp|Smart TV AQUOS

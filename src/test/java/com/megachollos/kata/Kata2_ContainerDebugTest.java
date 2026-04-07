@@ -20,8 +20,11 @@ class Kata2_ContainerDebugTest {
   // =============================================
   @Container
   static PostgreSQLContainer<?> postgresA =
-      new PostgreSQLContainer<>("postgres:999");
-
+      new PostgreSQLContainer<>("postgres:17-alpine");
+  //240654509c28
+  //0603ea7e1a71
+  //e7b08ee36463
+  //183c7e4a94eb ryuk
   @Test
   void exerciseA_wrongImage() {
     assertThat(postgresA.isRunning()).isTrue();
@@ -43,7 +46,7 @@ class Kata2_ContainerDebugTest {
     // This test connects with username "megachollos", password "megachollos", database "megachollos"
     // Fix the container above so these credentials work
     try (var conn = java.sql.DriverManager.getConnection(
-        postgresB.getJdbcUrl(), "megachollos", "megachollos")) {
+        postgresB.getJdbcUrl(), postgresB.getUsername(), postgresB.getPassword())) {
       var result = conn.createStatement().executeQuery("SELECT 1");
       assertThat(result.next()).isTrue();
     } catch (Exception e) {
@@ -65,6 +68,7 @@ class Kata2_ContainerDebugTest {
   @Test
   void exerciseC_observeContainer() throws InterruptedException {
     System.out.println("=== Container is running! ===");
+    System.out.println(postgresC.getContainerId());
     System.out.println("JDBC URL: " + postgresC.getJdbcUrl());
     System.out.println("Host: " + postgresC.getHost());
     System.out.println("Port: " + postgresC.getMappedPort(5432));
@@ -74,7 +78,7 @@ class Kata2_ContainerDebugTest {
 
     // TODO: Uncomment the line below, run the test, observe with docker ps,
     //       then comment it back when done
-    // Thread.sleep(60000);
+    Thread.sleep(60000);
 
     assertThat(postgresC.isRunning()).isTrue();
   }

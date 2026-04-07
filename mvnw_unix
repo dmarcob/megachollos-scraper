@@ -1,0 +1,52 @@
+#!/bin/sh
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+# This shell script is a wrapper for mvn that downloads and invokes it
+#
+
+if [ -z "$MAVEN_PROJECTBASEDIR" ] ; then
+  MAVEN_PROJECTBASEDIR=\`dirname \"\$0\"\`
+fi
+MAVEN_PROJECTBASEDIR=`cd "$MAVEN_PROJECTBASEDIR"; pwd`
+
+##########################################################################################
+# Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
+# This allows using the maven wrapper in projects that prohibit checking in binary data.
+##########################################################################################
+if [ -r "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" ] ; then
+    log() {
+        echo "$@"
+    }
+    BASE_DIR=`dirname .`
+    MODULE_DIR=`dirname "$0"`
+    mkdir -p "$BASE_DIR/.mvn/wrapper"
+    if [ ! -f "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar" ]; then
+        log "Downloading from: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar"
+        curl -sL https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar -o "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar"
+    fi
+    exec java -classpath "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar" org.apache.maven.wrapper.MavenWrapperMain "$@"
+else
+    if command -v mvn > /dev/null; then
+        log "Found mvn executable in PATH"
+        exec mvn "$@"
+    else
+        echo "MVN not found in PATH and maven-wrapper.jar not found."
+        exit 1
+    fi
+fi
+

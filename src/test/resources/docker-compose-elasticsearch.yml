@@ -5,4 +5,8 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false   # Disable SSL
-      - ES_JAVA_OPTS=-Xms750m -Xmx750m # Limit heap size
+      - xpack.security.enrollment.enabled=false
+      - xpack.ml.enabled=false
+      - ingest.geoip.downloader.enabled=false
+      - node.store.allow_mmap=false    # Avoid vm.max_map_count issues on Windows/WSL
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m # Faster startup for ITs

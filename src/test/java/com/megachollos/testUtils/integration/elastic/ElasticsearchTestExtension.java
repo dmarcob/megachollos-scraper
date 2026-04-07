@@ -9,6 +9,7 @@ import com.megachollos.testUtils.integration.DockerComposeInfo;
 import com.megachollos.testUtils.integration.TestProperties;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import lombok.SneakyThrows;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
@@ -35,13 +36,17 @@ public class ElasticsearchTestExtension extends BaseDockerComposeExtension {
   @Override
   protected void instantiate(File file) {
     elasticSearchComposeContainer = new DockerComposeContainer<>(file)
-        .withExposedService(dockerComposeInfo.getServiceName(), dockerComposeInfo.getServicePort())
-        .waitingFor(dockerComposeInfo.getServiceName(), Wait.forLogMessage(".*started.*", 1));
+        .withExposedService(
+            dockerComposeInfo.getServiceName(),
+            dockerComposeInfo.getServicePort(),
+            Wait.forListeningPort()
+                .withStartupTimeout(Duration.ofMinutes(5))
+        );
   }
 
   @Override
   public void beforeAllTests(ExtensionContext junitContext) {
-    TestProperties.setElasticProperties(getUrl());
+    TestProperties.setElasticProperties(getHttpUrl());
   }
 
   @Override
@@ -71,9 +76,13 @@ public class ElasticsearchTestExtension extends BaseDockerComposeExtension {
   }
 
   private ElasticsearchClient createClient() {
-    RestClient restClient = RestClient.builder(HttpHost.create(getUrl())).build();
+    RestClient restClient = RestClient.builder(HttpHost.create(getHttpUrl())).build();
     ElasticsearchTransport transport = new RestClientTransport(restClient,
         new JacksonJsonpMapper());
     return new ElasticsearchClient(transport);
+  }
+
+  private String getHttpUrl() {
+    return "http://" + getUrl();
   }
 }

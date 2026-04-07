@@ -38,6 +38,7 @@ public class PostgresTestExtension extends BaseDockerComposeExtension {
   @Override
   protected void instantiate(File file) {
     postgresContainer = new DockerComposeContainer<>(file)
+        .withLocalCompose(true)
         .withExposedService(dockerComposeInfo.getServiceName(), dockerComposeInfo.getServicePort())
         .waitingFor(dockerComposeInfo.getServiceName(),
             Wait.forLogMessage(".*database system is ready to accept connections.*\\n", 2));
@@ -82,14 +83,21 @@ public class PostgresTestExtension extends BaseDockerComposeExtension {
   private void deleteAllDatabaseRecords(ExtensionContext extensionContext) {
     DataSource dataSource = SpringExtension.getApplicationContext(extensionContext)
         .getBean(DataSource.class);
-    try (var connection = dataSource.getConnection();
-         var statement = connection.createStatement()) {
-      var rs = statement.executeQuery(
-          "SELECT tablename FROM pg_tables WHERE schemaname = 'public'");
-      while (rs.next()) {
-        String tableName = rs.getString("tablename");
-        if (!tableName.startsWith("megachollos_") && !tableName.startsWith("databasechangelog")) {
-          statement.execute("TRUNCATE TABLE \"" + tableName + "\" CASCADE");
+    try (var connection = dataSource.getConnection()) {
+      var tables = new java.util.ArrayList<String>();
+      try (var queryStatement = connection.createStatement();
+           var rs = queryStatement.executeQuery(
+               "SELECT tablename FROM pg_tables WHERE schemaname = 'public'")) {
+        while (rs.next()) {
+          String tableName = rs.getString("tablename");
+          if (!tableName.startsWith("megachollos_") && !tableName.startsWith("databasechangelog")) {
+            tables.add(tableName);
+          }
+        }
+      }
+      try (var dmlStatement = connection.createStatement()) {
+        for (String tableName : tables) {
+          dmlStatement.execute("TRUNCATE TABLE \"" + tableName + "\" CASCADE");
         }
       }
     } catch (Exception e) {
@@ -113,13 +121,19 @@ public class PostgresTestExtension extends BaseDockerComposeExtension {
   private void resetSequences(ExtensionContext context) {
     DataSource dataSource = SpringExtension.getApplicationContext(context)
         .getBean(DataSource.class);
-    try (var connection = dataSource.getConnection();
-         var statement = connection.createStatement()) {
-      var rs = statement.executeQuery(
-          "SELECT sequencename FROM pg_sequences WHERE schemaname = 'public'");
-      while (rs.next()) {
-        String seqName = rs.getString("sequencename");
-        statement.execute("ALTER SEQUENCE \"" + seqName + "\" RESTART WITH 1");
+    try (var connection = dataSource.getConnection()) {
+      var sequences = new java.util.ArrayList<String>();
+      try (var queryStatement = connection.createStatement();
+           var rs = queryStatement.executeQuery(
+               "SELECT sequencename FROM pg_sequences WHERE schemaname = 'public'")) {
+        while (rs.next()) {
+          sequences.add(rs.getString("sequencename"));
+        }
+      }
+      try (var dmlStatement = connection.createStatement()) {
+        for (String seqName : sequences) {
+          dmlStatement.execute("ALTER SEQUENCE \"" + seqName + "\" RESTART WITH 1");
+        }
       }
     } catch (Exception e) {
       log.warn("Error resetting sequences: {}", e.getMessage());

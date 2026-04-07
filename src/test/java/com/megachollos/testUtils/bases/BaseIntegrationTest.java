@@ -7,6 +7,7 @@ import com.megachollos.testUtils.integration.elastic.annotations.EnableElasticse
 import com.megachollos.testUtils.integration.postgres.EnablePostgresTests;
 import com.megachollos.testUtils.providers.ObjectProvider;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import org.springframework.data.elasticsearch.core.IndexOperations;
 import org.springframework.data.elasticsearch.core.RefreshPolicy;
 import org.springframework.data.elasticsearch.core.document.Document;
 import org.springframework.data.elasticsearch.core.mapping.IndexCoordinates;
+import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ActiveProfiles;
 
 @ActiveProfiles("test")
@@ -56,6 +58,32 @@ public abstract class BaseIntegrationTest {
     // AND given settings
     Map<String, Object> settings = Document.from(
         ObjectProvider.fromClassPath("json/settings.json"));
-    indexOperations.create(settings, document);
+    createIndexWithRetry(indexOperations, settings, document);
+  }
+
+  private void createIndexWithRetry(IndexOperations indexOperations, Map<String, Object> settings,
+      Document document) {
+    final int attempts = 8;
+    for (int i = 1; i <= attempts; i++) {
+      try {
+        indexOperations.create(settings, document);
+        return;
+      } catch (DataAccessException ex) {
+        if (i == attempts) {
+          throw ex;
+        }
+        log.warn("Elasticsearch no disponible aun (intento {}/{}). Reintentando...", i, attempts);
+        sleepSeconds(2);
+      }
+    }
+  }
+
+  private void sleepSeconds(int seconds) {
+    try {
+      TimeUnit.SECONDS.sleep(seconds);
+    } catch (InterruptedException e) {
+      Thread.currentThread().interrupt();
+      throw new IllegalStateException("Interrumpido esperando Elasticsearch", e);
+    }
   }
 }

@@ -10,6 +10,7 @@ import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.jupiter.api.extension.ExtensionContext;
+import org.opentest4j.TestAbortedException;
 import org.testcontainers.containers.ContainerState;
 import org.testcontainers.containers.DockerComposeContainer;
 import org.testcontainers.shaded.org.apache.commons.io.FileUtils;
@@ -66,13 +67,42 @@ public abstract class BaseDockerComposeExtension extends TestCallback {
 
     // Stopped container -> start
     if (!isRunning) {
-      getDockerContainer().withStartupTimeout(Duration.ofMinutes(15L)).start();
+      try {
+        startWithRetry();
+      } catch (RuntimeException e) {
+        throw new TestAbortedException(
+            "Docker no disponible o inestable para Testcontainers en esta sesion", e);
+      }
 
       Integer port = getDockerContainer().getServicePort(dockerComposeInfo.getServiceName(),
           dockerComposeInfo.getServicePort());
       log.info("Test Container {} started at port {}", dockerComposeInfo.getServiceName(), port);
       beforeAllTests(junitContext);
     }
+  }
+
+  private void startWithRetry() {
+    RuntimeException lastError = null;
+    for (int attempt = 1; attempt <= 2; attempt++) {
+      try {
+        getDockerContainer().withStartupTimeout(Duration.ofMinutes(15L)).start();
+        return;
+      } catch (RuntimeException e) {
+        lastError = e;
+        if (attempt == 2) {
+          throw e;
+        }
+        log.warn("Docker start failed on attempt {}. Retrying once...", attempt, e);
+        try {
+          Thread.sleep(2000L);
+        } catch (InterruptedException interruptedException) {
+          Thread.currentThread().interrupt();
+          throw e;
+        }
+      }
+    }
+
+    throw lastError;
   }
 
   @Override

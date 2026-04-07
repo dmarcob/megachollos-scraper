@@ -38,6 +38,7 @@ public class PostgresTestExtension extends BaseDockerComposeExtension {
   @Override
   protected void instantiate(File file) {
     postgresContainer = new DockerComposeContainer<>(file)
+        .withLocalCompose(true)
         .withExposedService(dockerComposeInfo.getServiceName(), dockerComposeInfo.getServicePort())
         .waitingFor(dockerComposeInfo.getServiceName(),
             Wait.forLogMessage(".*database system is ready to accept connections.*\\n", 2));

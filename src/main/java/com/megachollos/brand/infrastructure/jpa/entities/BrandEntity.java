@@ -22,7 +22,7 @@ public class BrandEntity {
   @Id
   private String uniqueName;
 
-  @Column(nullable = false)
+  @Column(nullable = false, unique = true)
   private String displayName;
 
   public Brand toDomain() {

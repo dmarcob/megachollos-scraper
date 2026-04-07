@@ -8,10 +8,10 @@ import com.megachollos.shared.infrastructure.rest.dtos.masterdata.MasterDataList
 import com.megachollos.testUtils.bases.BaseIntegrationTest;
 import io.restassured.common.mapper.TypeRef;
 import lombok.SneakyThrows;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-
 public class GetEcommercesIT extends BaseIntegrationTest {
 
   public static final String PATH = "/ecommerces/";

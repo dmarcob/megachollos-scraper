@@ -14,7 +14,7 @@ Open the file `src/test/java/com/megachollos/kata/Kata1_BrandRepositoryTest.java
 
 Run `Kata1_BrandRepositoryTest` from your IDE or with:
 ```bash
-mvn test -Dtest=Kata1_BrandRepositoryTest
+mvn test -Dtest=Kata1_BrandRepositoryTest -Dsurefire.excludes=""
 ```
 
 Read the error carefully. What is it telling you?
@@ -23,17 +23,13 @@ Read the error carefully. What is it telling you?
 
 The test uses `@DataJpaTest`, which by default tries to use an H2 in-memory database. But this project doesn't have H2 — it uses PostgreSQL. We need a real PostgreSQL for our tests.
 
-### Step 3 — Add the Testcontainers PostgreSQL dependency
+### Step 3 — Verify the dependencies
 
-Add this dependency to `pom.xml` inside `<dependencies>`:
-```xml
-<dependency>
-  <groupId>org.testcontainers</groupId>
-  <artifactId>postgresql</artifactId>
-  <version>1.21.4</version>
-  <scope>test</scope>
-</dependency>
-```
+Check that these dependencies exist in `pom.xml` (they should already be there):
+- `org.testcontainers:postgresql`
+- `org.springframework.boot:spring-boot-testcontainers`
+
+If they're missing, add them inside `<dependencies>` with `<scope>test</scope>`.
 
 ### Step 4 — Fix the test
 
@@ -56,7 +52,7 @@ Modify `Kata1_BrandRepositoryTest.java`:
 ### Step 5 — Run the test again
 
 ```bash
-mvn test -Dtest=Kata1_BrandRepositoryTest
+mvn test -Dtest=Kata1_BrandRepositoryTest -Dsurefire.excludes=""
 ```
 
 It should pass now. You just tested against a real PostgreSQL running in a Docker container!

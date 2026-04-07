@@ -14,6 +14,9 @@ Create the class with these annotations:
 - `@DataJpaTest`
 - `@Testcontainers`
 - `@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)`
+- `@TestPropertySource(properties = "spring.jpa.hibernate.ddl-auto=create-drop")`
+
+> The last annotation tells Hibernate to create the tables automatically in the test container and drop them when done.
 
 Add a static PostgreSQL container
 

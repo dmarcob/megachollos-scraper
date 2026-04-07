@@ -15,6 +15,7 @@ Create a new file: `src/test/java/com/megachollos/kata/Kata4_LifecycleTest.java`
    @DataJpaTest
    @Testcontainers
    @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+   @TestPropertySource(properties = "spring.jpa.hibernate.ddl-auto=create-drop")
    ```
 
 2. Add a **non-static** container (no `static` keyword):
@@ -108,6 +109,7 @@ Create a custom annotation that combines all the boilerplate:
 @DataJpaTest
 @Testcontainers
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@TestPropertySource(properties = "spring.jpa.hibernate.ddl-auto=create-drop")
 public @interface EnablePostgresTest {
 }
 ```

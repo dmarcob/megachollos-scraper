@@ -20,7 +20,7 @@ class Kata2_ContainerDebugTest {
   // =============================================
   @Container
   static PostgreSQLContainer<?> postgresA =
-      new PostgreSQLContainer<>("postgres:999");
+      new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Test
   void exerciseA_wrongImage() {
@@ -34,9 +34,9 @@ class Kata2_ContainerDebugTest {
   @Container
   static PostgreSQLContainer<?> postgresB =
       new PostgreSQLContainer<>("postgres:17-alpine")
-          .withUsername("wrong_user")
-          .withPassword("wrong_pass")
-          .withDatabaseName("wrong_db");
+          .withUsername("megachollos")
+          .withPassword("megachollos")
+          .withDatabaseName("megachollos");
 
   @Test
   void exerciseB_wrongCredentials() {

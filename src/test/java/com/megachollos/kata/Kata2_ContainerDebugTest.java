@@ -1,5 +1,6 @@
 package com.megachollos.kata;
 
+import static com.megachollos.kata.Kata1_BrandRepositoryTest.postgres;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class Kata2_ContainerDebugTest {
   // =============================================
   @Container
   static PostgreSQLContainer<?> postgresA =
-      new PostgreSQLContainer<>("postgres:999");
+      new PostgreSQLContainer<>("postgres:17-alpine");
 
   @Test
   void exerciseA_wrongImage() {
@@ -34,9 +35,9 @@ class Kata2_ContainerDebugTest {
   @Container
   static PostgreSQLContainer<?> postgresB =
       new PostgreSQLContainer<>("postgres:17-alpine")
-          .withUsername("wrong_user")
-          .withPassword("wrong_pass")
-          .withDatabaseName("wrong_db");
+          .withUsername("megachollos")
+          .withPassword("megachollos")
+          .withDatabaseName("megachollos");
 
   @Test
   void exerciseB_wrongCredentials() {
@@ -72,9 +73,10 @@ class Kata2_ContainerDebugTest {
     System.out.println("Open another terminal and run: docker ps");
     System.out.println("Then connect with: docker exec -it <CONTAINER_ID> psql -U test -d test");
 
+    System.out.println(postgres.getLogs());
     // TODO: Uncomment the line below, run the test, observe with docker ps,
     //       then comment it back when done
-    // Thread.sleep(60000);
+    // Thread.sleep(300000);
 
     assertThat(postgresC.isRunning()).isTrue();
   }
